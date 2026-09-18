@@ -4,10 +4,23 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function App() {
   return (
     <SafeAreaView>
-      <Text style={{ fontSize: 24, fontWeight: "bold" }}>
-        Hello React Native..
-      </Text>
-      <Text style={{ fontSize: 20 }}>I am Expo..</Text>
+      <View
+        style={{
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+        }}
+      >
+        <View>
+          <Text style={{ fontSize: 50, fontWeight: "bold" }}>Hey,</Text>
+          <Text style={{ fontSize: 50, fontWeight: "bold" }}>Login Now</Text>
+        </View>
+        <Text style={{ marginTop: 20, color: "gray" }}>
+          If you are new?
+          <Text style={{ fontWeight: "bold", marginLeft: 5, color: "black" }}>
+            Create Account
+          </Text>
+        </Text>
+      </View>
     </SafeAreaView>
   );
 }
