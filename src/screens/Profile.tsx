@@ -3,7 +3,7 @@ import { Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 
-export default function Home() {
+export default function Profile() {
   const handleLogout = () => {
     router.replace("/login");
   };
@@ -28,13 +28,13 @@ export default function Home() {
             width: 100,
             height: 100,
             borderRadius: 50,
-            backgroundColor: "#FEE2E2",
+            backgroundColor: "#E0E7FF",
             justifyContent: "center",
             alignItems: "center",
             marginBottom: 24,
           }}
         >
-          <Ionicons name="home" size={48} color="#A62039" />
+          <Ionicons name="person" size={48} color="#3B82F6" />
         </View>
 
         <Text
@@ -46,7 +46,7 @@ export default function Home() {
             marginBottom: 8,
           }}
         >
-          Welcome Home!
+          Welcome Profile!
         </Text>
 
         <Text
@@ -57,7 +57,7 @@ export default function Home() {
             marginBottom: 32,
           }}
         >
-          You have successfully navigated to the Home screen.
+          You have successfully navigated to your Profile tab.
         </Text>
 
         <Pressable
