@@ -1,7 +1,7 @@
+import Settings from "@/components/Settings";
 import { router } from "expo-router";
-import { Pressable, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Ionicons } from "@expo/vector-icons";
 
 export default function Profile() {
   const handleLogout = () => {
@@ -28,13 +28,15 @@ export default function Profile() {
             width: 100,
             height: 100,
             borderRadius: 50,
-            backgroundColor: "#E0E7FF",
+            backgroundColor: "red",
             justifyContent: "center",
             alignItems: "center",
-            marginBottom: 24,
+            marginBottom: 12,
           }}
         >
-          <Ionicons name="person" size={48} color="#3B82F6" />
+          <Text style={{ fontSize: 70, fontWeight: "bold", color: "white" }}>
+            A
+          </Text>
         </View>
 
         <Text
@@ -43,24 +45,17 @@ export default function Profile() {
             fontWeight: "bold",
             color: "#1A1A1A",
             textAlign: "center",
-            marginBottom: 8,
           }}
         >
-          Welcome Profile!
+          Aadhi
         </Text>
+        <Text style={{ fontSize: 18 }}>aadhi@gmail.com</Text>
+        <View>
+          <Text>Settings</Text>
+          <Settings />
+        </View>
 
-        <Text
-          style={{
-            fontSize: 16,
-            color: "#666666",
-            textAlign: "center",
-            marginBottom: 32,
-          }}
-        >
-          You have successfully navigated to your Profile tab.
-        </Text>
-
-        <Pressable
+        {/* <Pressable
           style={{
             backgroundColor: "#A62039",
             height: 50,
@@ -85,7 +80,7 @@ export default function Profile() {
           >
             Logout
           </Text>
-        </Pressable>
+        </Pressable> */}
       </View>
     </SafeAreaView>
   );
