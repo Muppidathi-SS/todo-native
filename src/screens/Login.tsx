@@ -1,13 +1,12 @@
+import { router } from "expo-router";
 import { Pressable, Text, TextInput, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { router } from "expo-router";
 
 export default function Login() {
   const handleLogin = () => {
     const isAuth = true;
-
     if (isAuth) {
-      router.replace("/home");
+      router.replace("/profile");
     }
   };
 
